@@ -1,10 +1,10 @@
 html, body {
-    height: 100%;
-    width: 100%;
-    font-size: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    background-color: #262626;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  background-color: #262626;
 }
 
 html, body {
@@ -24,11 +24,12 @@ html {
   overflow: hidden;
 }
 
-html,body {
+html, body {
   overflow: hidden;
   user-select: none;
+
   * {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
   }
 }
@@ -39,14 +40,14 @@ body {
   height: 100vh;
   width: 100%;
   position: fixed;
-  @media not all and (hover:hover) {
+  @media not all and (hover: hover) {
     height: var(--app-height);
   }
 }
 
 h1 {
-    color: white;
-    margin: 60px 90px;
+  color: white;
+  margin: 60px 90px;
 }
 
 .main-container {
@@ -58,9 +59,32 @@ h1 {
 }
 
 .main-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-list {
+  visibility: hidden;
+}
+
+.buttons-wrapper {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  .buttons {
+    border black 1px solid
+    padding 12px
+    border-radius 20px
+    transition 0.3s
+  }
+
+  .buttons:hover{
+    color white
+    background-color black
+  }
 }
